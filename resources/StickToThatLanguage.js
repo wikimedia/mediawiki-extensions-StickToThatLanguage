@@ -13,9 +13,16 @@
 	'use strict';
 
 	$( document ).ready( function() {
+		// get user preferred languages in the DOM:
+		var topLanguages = $( '.sttl-toplang' );
+
+		if( topLanguages.length === 0 ) {
+			// no 'more languages' if there is no languages displayed at all
+			return;
+		}
 
 		// place linked separator to have other languages collapse below top 10 languages
-		$( '.sttl-toplang' )
+		topLanguages
 		.removeClass( 'sttl-lasttoplang' ) // remove non-JS exclusive class
 		.detach()
 		.appendTo(
