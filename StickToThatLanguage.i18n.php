@@ -18,7 +18,7 @@ $messages = array();
  */
 $messages['en'] = array(
 	'sticktothatlanguage-desc' => 'Provides functionality to choose a language persistently',
-	'sttl-setting-languages' => 'Additional languages<br />(as fallback when displaying data not available in the main language)',
+	'sttl-setting-languages' => 'Preferred languages',
 	'sttl-languages-more-link' => 'more languages',
 );
 
