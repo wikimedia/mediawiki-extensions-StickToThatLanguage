@@ -77,10 +77,11 @@ $messages['es'] = array(
 /** French (français)
  * @author Brunoperel
  * @author Gomoko
+ * @author Tititou36
  */
 $messages['fr'] = array(
 	'sticktothatlanguage-desc' => 'Fournit les fonctionnalités pour choisir une langue de façon définitive',
-	'sttl-setting-languages' => "Autres langues<br />(en tant que substitut lors de l'affichage de données non disponibles dans la langue principale)",
+	'sttl-setting-languages' => 'Langues préférées',
 	'sttl-languages-more-link' => 'autres langages',
 );
 
@@ -89,7 +90,7 @@ $messages['fr'] = array(
  */
 $messages['gl'] = array(
 	'sticktothatlanguage-desc' => 'Proporciona varias funcionalidades para elixir unha lingua continuamente',
-	'sttl-setting-languages' => 'Linguas adicionais<br />(de reserva cando os datos que se mostren non estean dispoñibles na lingua principal)',
+	'sttl-setting-languages' => 'Linguas preferidas',
 	'sttl-languages-more-link' => 'máis linguas',
 );
 
@@ -108,7 +109,7 @@ $messages['he'] = array(
  */
 $messages['hsb'] = array(
 	'sticktothatlanguage-desc' => 'Zmóžnja, rěč na přeco wuzwolić',
-	'sttl-setting-languages' => 'Přidatne rěče<br />(jako narunanje, hdyž maja so daty pokazać, kotrež we hłownej rěči k dispoziciji njesteja.)',
+	'sttl-setting-languages' => 'Preferowane rěče',
 	'sttl-languages-more-link' => 'dalše rěče',
 );
 
@@ -135,7 +136,7 @@ $messages['is'] = array(
  */
 $messages['it'] = array(
 	'sticktothatlanguage-desc' => 'Fornisce le funzionalità per scegliere una lingua persistente',
-	'sttl-setting-languages' => 'Lingue aggiuntive<br />(come lingue di riserva durante la visualizzazione dei dati se non sono disponibili nella lingua principale)',
+	'sttl-setting-languages' => 'Lingue preferite',
 	'sttl-languages-more-link' => 'altre lingue',
 );
 
@@ -144,7 +145,7 @@ $messages['it'] = array(
  */
 $messages['ko'] = array(
 	'sticktothatlanguage-desc' => '지속적으로 언어 선택 기능을 제공',
-	'sttl-setting-languages' => '추가 언어<br />(주요 언어로 사용할 수 없는 데이터를 표시할 때 대체할 언어)',
+	'sttl-setting-languages' => '주로 사용하는 언어',
 	'sttl-languages-more-link' => '기타 언어',
 );
 
@@ -162,7 +163,7 @@ $messages['lb'] = array(
  */
 $messages['mk'] = array(
 	'sticktothatlanguage-desc' => 'Овозможува постојано избирање на јазик',
-	'sttl-setting-languages' => 'Уште јазици<br />(како резервни кога податоците не се достапни на главниот јазик)',
+	'sttl-setting-languages' => 'Претпочитани јазици',
 	'sttl-languages-more-link' => 'уште јазици',
 );
 
