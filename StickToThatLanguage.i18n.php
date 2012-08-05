@@ -61,7 +61,7 @@ $messages['diq'] = array(
  */
 $messages['dsb'] = array(
 	'sticktothatlanguage-desc' => 'Zmóžnja, rěc na pśecej wubraś',
-	'sttl-setting-languages' => 'Pśidatne rěcy<br />(ako narownanje, gaž maju se daty pokazaś, kótarež njestoje w głownej rěcy k dispoziciji.)',
+	'sttl-setting-languages' => 'Preferěrowane rěcy',
 	'sttl-languages-more-link' => 'dalšne rěcy',
 );
 
@@ -167,11 +167,29 @@ $messages['mk'] = array(
 	'sttl-languages-more-link' => 'уште јазици',
 );
 
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
+ * @author Jeblad
+ */
+$messages['nb'] = array(
+	'sticktothatlanguage-desc' => 'Tilbyr funksjonalitet for å velge et språk permanent.',
+	'sttl-setting-languages' => 'Foretrukket språk',
+	'sttl-languages-more-link' => 'flere språk',
+);
+
 /** Dutch (Nederlands)
  * @author SPQRobin
  */
 $messages['nl'] = array(
 	'sttl-languages-more-link' => 'meer talen',
+);
+
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+ * @author Jeblad
+ */
+$messages['nn'] = array(
+	'sticktothatlanguage-desc' => 'Tilbyd funksjonalitet for å velje eit språk permanent.',
+	'sttl-setting-languages' => 'Føretrekt språk',
+	'sttl-languages-more-link' => 'fleire språk',
 );
 
 /** Pashto (پښتو)
