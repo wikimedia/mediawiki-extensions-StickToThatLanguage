@@ -35,7 +35,7 @@ $messages['qqq'] = array(
  */
 $messages['be-tarask'] = array(
 	'sticktothatlanguage-desc' => 'Дазваляе выбіраць мову на працяглы час',
-	'sttl-setting-languages' => 'Дадатковыя мовы<br />(як запасныя, калі на асноўнай мове зьвестак няма)',
+	'sttl-setting-languages' => 'Пажаданыя мовы',
 	'sttl-languages-more-link' => 'болей моваў',
 );
 
@@ -178,8 +178,10 @@ $messages['nb'] = array(
 
 /** Dutch (Nederlands)
  * @author SPQRobin
+ * @author Siebrand
  */
 $messages['nl'] = array(
+	'sttl-setting-languages' => 'Voorkeurstalen',
 	'sttl-languages-more-link' => 'meer talen',
 );
 
