@@ -276,6 +276,9 @@ final class Hooks {
 		// removes everything from the output buffer and returns it, so we can actually modify it:
 		$output = ob_get_clean();
 
+		// restart output buffering
+		ob_start();
+
 		// regex which picks <form> if it is valid HTML (allows self-closing tags):
 		/*
 		$recursiveDomRegex = '(?P<innerDOM> <(\w+)(?:\s+[^>]*|)>(?: (?> (?!<\w+(?:\s+[^>]*|)[^\/]> | <\/\w+> ).)* | (?&innerDOM) )*?<\/ \4 > )*';
