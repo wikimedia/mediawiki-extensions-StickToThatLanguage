@@ -181,6 +181,7 @@ $messages['nb'] = array(
  * @author Siebrand
  */
 $messages['nl'] = array(
+	'sticktothatlanguage-desc' => 'Biedt functionaliteit om een taalkeuze persistent te maken',
 	'sttl-setting-languages' => 'Voorkeurstalen',
 	'sttl-languages-more-link' => 'meer talen',
 );
@@ -201,6 +202,14 @@ $messages['ps'] = array(
 	'sttl-languages-more-link' => 'نورې ژبې',
 );
 
+/** Portuguese (português)
+ * @author SandroHc
+ */
+$messages['pt'] = array(
+	'sttl-setting-languages' => 'Linguagens preferidas',
+	'sttl-languages-more-link' => 'mais linguagens',
+);
+
 /** Brazilian Portuguese (português do Brasil)
  * @author Jaideraf
  */
@@ -217,5 +226,13 @@ $messages['tl'] = array(
 	'sticktothatlanguage-desc' => 'Nagbibigay ng katungkulan na masugid na makapili ng isang wika',
 	'sttl-setting-languages' => 'Nais na mga wika',
 	'sttl-languages-more-link' => 'marami pang mga wika',
+);
+
+/** Traditional Chinese (‪中文（繁體）‬)
+ * @author Simon Shek
+ */
+$messages['zh-hant'] = array(
+	'sttl-setting-languages' => '偏好的語言',
+	'sttl-languages-more-link' => '更多語言',
 );
 
