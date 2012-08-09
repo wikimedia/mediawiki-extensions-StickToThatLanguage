@@ -11,11 +11,13 @@ namespace STTLanguage;
  *
  * TODO:
  * - getting rid of the overall hackiness of this extension, especially the part where the output buffer is hacked to
+ *   get the 'uselang' parameter into forms. For this to be fixed, non-trivial MW core changes need to be done or the
+ *   overall concept of how this extension works has to be changed.
  *
  * @file StickToThatLanguage.php
  * @ingroup STTLanguage
  *
- * @version: 0.1 alpha
+ * @version: 0.1rc
  * @licence GNU GPL v2+
  * @author: Daniel Werner < daniel.werner@wikimedia.de >
  */
@@ -42,9 +44,8 @@ $wgHooks['UnitTestsList'][]                    = 'STTLanguage\Hooks::registerUni
 $wgHooks['GetPreferences'][]                   = 'STTLanguage\Hooks::onGetPreferences';
 $wgHooks['UserGetDefaultOptions'][]            = 'STTLanguage\Hooks::onUserGetDefaultOptions';
 $wgHooks['SkinTemplateOutputPageBeforeExec'][] = 'STTLanguage\Hooks::onSkinTemplateOutputPageBeforeExec';
-$wgHooks['LinkBegin'][]                        = 'STTLanguage\Hooks::onLinkBegin';
 
-if( isset( $_SERVER['HTTP_USER_AGENT'] ) ) {
+if( !$wgCommandLineMode ) {
 	// We don't want to hook in these places when running tests. This is because core tests will fail since they
 	// simply do not consider extensions to change the output of the tested functions.
 	$wgHooks['BeforePageDisplay'][]                = 'STTLanguage\Hooks::onBeforePageDisplay';
@@ -56,7 +57,7 @@ if( isset( $_SERVER['HTTP_USER_AGENT'] ) ) {
 // Resource Loader Module:
 $wgResourceModules['sticktothatlanguage'] = array(
 	'localBasePath' => Ext::getDir(),
-	'remoteBasePath' => Ext::getScriptPath(),
+	'remoteExtPath' => 'StickToThatLanguage',
 	'scripts' => array(
 		'resources/StickToThatLanguage.js'
 	),
@@ -90,7 +91,7 @@ class Ext {
 	 *
 	 * @var string
 	 */
-	const VERSION = '0.1 alpha';
+	const VERSION = '0.1rc';
 
 	/**
 	 * Returns the extensions base installation directory.
@@ -109,36 +110,12 @@ class Ext {
 	}
 
 	/**
-	 * Get the extensions installation directory path as seen from the web.
-	 *
-	 * @since 0.1
-	 *
-	 * @return string
-	 */
-	public static function getScriptPath() {
-		static $path = null;
-		if( $path === null ) {
-			global $wgVersion, $wgScriptPath, $wgExtensionAssetsPath;
-
-			$dir = str_replace( '\\', '/', self::getDir() );
-			$dirName = substr( $dir, strrpos( $dir, '/' ) + 1 );
-
-			$path = (
-			( version_compare( $wgVersion, '1.16', '>=' ) && isset( $wgExtensionAssetsPath ) && $wgExtensionAssetsPath )
-				? $wgExtensionAssetsPath
-				: $wgScriptPath . '/extensions'
-			) . "/Wikibase/$dirName"; // FIXME: has to be adjusted as soon as extension moves!
-		}
-		return $path;
-	}
-
-	/**
 	 * Returns the list of languages the user has set as preferred languages in the preferences.
 	 * This also includes the users main language always.
 	 *
 	 * @since 0.1
 	 *
-	 * @param User $user
+	 * @param \User $user
 	 * @return array with language codes as values
 	 */
 	public static function getUserLanguageCodes( $user ) {
