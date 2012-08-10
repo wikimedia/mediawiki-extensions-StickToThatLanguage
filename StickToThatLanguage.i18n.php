@@ -140,6 +140,15 @@ $messages['it'] = array(
 	'sttl-languages-more-link' => 'altre lingue',
 );
 
+/** Japanese (日本語)
+ * @author Shirayuki
+ */
+$messages['ja'] = array(
+	'sticktothatlanguage-desc' => '言語を永続的に選択する機能を提供する',
+	'sttl-setting-languages' => '優先言語',
+	'sttl-languages-more-link' => '他の言語',
+);
+
 /** Korean (한국어)
  * @author 아라
  */
@@ -219,6 +228,13 @@ $messages['pt-br'] = array(
 	'sttl-languages-more-link' => 'mais idiomas',
 );
 
+/** Romanian (română)
+ * @author Stelistcristi
+ */
+$messages['ro'] = array(
+	'sttl-setting-languages' => 'Limbi preferate',
+);
+
 /** Tagalog (Tagalog)
  * @author AnakngAraw
  */
@@ -226,6 +242,13 @@ $messages['tl'] = array(
 	'sticktothatlanguage-desc' => 'Nagbibigay ng katungkulan na masugid na makapili ng isang wika',
 	'sttl-setting-languages' => 'Nais na mga wika',
 	'sttl-languages-more-link' => 'marami pang mga wika',
+);
+
+/** Simplified Chinese (‪中文（简体）‬)
+ * @author Shirayuki
+ */
+$messages['zh-hans'] = array(
+	'sttl-setting-languages' => '首选的语言',
 );
 
 /** Traditional Chinese (‪中文（繁體）‬)
