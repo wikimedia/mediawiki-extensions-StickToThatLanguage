@@ -39,6 +39,14 @@ $messages['be-tarask'] = array(
 	'sttl-languages-more-link' => 'болей моваў',
 );
 
+/** Czech (česky)
+ * @author Reaperman
+ */
+$messages['cs'] = array(
+	'sttl-setting-languages' => 'Preferované jazyky',
+	'sttl-languages-more-link' => 'další jazyky',
+);
+
 /** German (Deutsch)
  * @author Kghbln
  * @author Metalhead64
@@ -233,6 +241,13 @@ $messages['pt-br'] = array(
  */
 $messages['ro'] = array(
 	'sttl-setting-languages' => 'Limbi preferate',
+);
+
+/** Telugu (తెలుగు)
+ * @author Veeven
+ */
+$messages['te'] = array(
+	'sttl-languages-more-link' => 'మరిన్ని భాషలు',
 );
 
 /** Tagalog (Tagalog)
