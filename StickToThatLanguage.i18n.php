@@ -157,6 +157,13 @@ $messages['ja'] = array(
 	'sttl-languages-more-link' => '他の言語',
 );
 
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'sttl-languages-more-link' => 'მეტი ენა',
+);
+
 /** Korean (한국어)
  * @author 아라
  */
