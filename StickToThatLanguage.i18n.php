@@ -191,6 +191,15 @@ $messages['mk'] = array(
 	'sttl-languages-more-link' => 'уште јазици',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'sticktothatlanguage-desc' => 'Menyediakan kefungsian untuk mengekalkan pilihan bahasa',
+	'sttl-setting-languages' => 'Bahasa keutamaan',
+	'sttl-languages-more-link' => 'bahasa lain',
+);
+
 /** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Jeblad
  */
