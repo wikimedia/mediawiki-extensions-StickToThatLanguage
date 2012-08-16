@@ -93,6 +93,14 @@ $messages['fr'] = array(
 	'sttl-languages-more-link' => 'autres langages',
 );
 
+/** Franco-Provençal (arpetan)
+ * @author ChrisPtDe
+ */
+$messages['frp'] = array(
+	'sttl-setting-languages' => 'Lengoues prèferâyes',
+	'sttl-languages-more-link' => 'ôtres lengoues',
+);
+
 /** Galician (galego)
  * @author Toliño
  */
