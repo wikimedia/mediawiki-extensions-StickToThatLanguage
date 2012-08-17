@@ -30,6 +30,15 @@ $messages['qqq'] = array(
 	'sttl-languages-more-link' => 'Link to show all languages other than the top 10 languages. The link sits within the "In other languages" section below the top 10 languages that are always displayed. Clicking the link unfolds all the links to other languages just below it.',
 );
 
+/** Asturian (asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'sticktothatlanguage-desc' => 'Ufre la capacidá pa escoyer una llingua de mou persistente',
+	'sttl-setting-languages' => 'Llingües preferíes',
+	'sttl-languages-more-link' => 'más llingües',
+);
+
 /** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author Wizardist
  */
