@@ -124,8 +124,7 @@ $messages['gl'] = array(
  */
 $messages['he'] = array(
 	'sticktothatlanguage-desc' => 'יכולת לבחור שפה באופן קבוע',
-	'sttl-setting-languages' => 'שפות נוספות<br />
-(בתור גיבוי למקרה שהנתונים אינם זמינים בשפה העיקרית)',
+	'sttl-setting-languages' => 'שפות מועדפות',
 	'sttl-languages-more-link' => 'עוד שפות',
 );
 
