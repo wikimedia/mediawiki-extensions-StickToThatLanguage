@@ -91,6 +91,14 @@ $messages['es'] = array(
 	'sttl-languages-more-link' => 'más idiomas',
 );
 
+/** Basque (euskara)
+ * @author An13sa
+ */
+$messages['eu'] = array(
+	'sttl-setting-languages' => 'Hobetsitako hizkuntzak',
+	'sttl-languages-more-link' => 'Hizkuntza gehiago',
+);
+
 /** French (français)
  * @author Brunoperel
  * @author Gomoko
