@@ -256,6 +256,7 @@ $messages['nn'] = array(
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
+	'sttl-setting-languages' => 'غوره ژبې',
 	'sttl-languages-more-link' => 'نورې ژبې',
 );
 
