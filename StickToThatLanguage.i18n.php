@@ -202,7 +202,7 @@ $messages['ko'] = array(
  */
 $messages['lb'] = array(
 	'sticktothatlanguage-desc' => 'Erméiglecht et eng Sprooch permanent erauszesichen',
-	'sttl-setting-languages' => "Zousätzlech Sproochen <br />(als Alternativ wann d'Donnéeën an der Haaptsprooch net disponibel sinn)",
+	'sttl-setting-languages' => 'Léifste Sproochen',
 	'sttl-languages-more-link' => 'méi Sproochen',
 );
 
