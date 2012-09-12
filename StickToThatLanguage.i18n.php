@@ -252,6 +252,15 @@ $messages['nn'] = array(
 	'sttl-languages-more-link' => 'fleire språk',
 );
 
+/** Polish (polski)
+ * @author BeginaFelicysym
+ */
+$messages['pl'] = array(
+	'sticktothatlanguage-desc' => 'Dostarcza funkcji wyboru języka na stałe',
+	'sttl-setting-languages' => 'Preferowane języki',
+	'sttl-languages-more-link' => 'więcej języków',
+);
+
 /** Pashto (پښتو)
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
