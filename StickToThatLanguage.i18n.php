@@ -197,6 +197,15 @@ $messages['ko'] = array(
 	'sttl-languages-more-link' => '기타 언어',
 );
 
+/** Colognian (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'sticktothatlanguage-desc' => 'Määd et müjjelesch, en Schprooch op Door ußzewähle.',
+	'sttl-setting-languages' => 'De vörjetroke Schprooche',
+	'sttl-languages-more-link' => 'mieh Shprooche',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
