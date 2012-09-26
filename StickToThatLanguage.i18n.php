@@ -318,11 +318,12 @@ $messages['tl'] = array(
 	'sttl-languages-more-link' => 'marami pang mga wika',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Shirayuki
  */
 $messages['zh-hans'] = array(
 	'sttl-setting-languages' => '首选的语言',
+	'sttl-languages-more-link' => '更多语言',
 );
 
 /** Traditional Chinese (‪中文（繁體）‬)
