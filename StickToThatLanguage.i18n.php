@@ -39,7 +39,7 @@ $messages['ast'] = array(
 	'sttl-languages-more-link' => 'más llingües',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Wizardist
  */
 $messages['be-tarask'] = array(
@@ -233,7 +233,7 @@ $messages['ms'] = array(
 	'sttl-languages-more-link' => 'bahasa lain',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Jeblad
  */
 $messages['nb'] = array(
@@ -252,7 +252,7 @@ $messages['nl'] = array(
 	'sttl-languages-more-link' => 'meer talen',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Jeblad
  */
 $messages['nn'] = array(
@@ -326,7 +326,7 @@ $messages['zh-hans'] = array(
 	'sttl-languages-more-link' => '更多语言',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Simon Shek
  */
 $messages['zh-hant'] = array(
