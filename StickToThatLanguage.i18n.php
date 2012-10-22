@@ -150,7 +150,7 @@ $messages['hsb'] = array(
  */
 $messages['ia'] = array(
 	'sticktothatlanguage-desc' => 'Forni le functionalitate de render le selection de lingua persistente',
-	'sttl-setting-languages' => 'Linguas additional<br />(como reserva quando monstrar datos non disponibile in le lingua principal)',
+	'sttl-setting-languages' => 'Linguas additional<br />(como reserva quando monstrar datos non disponibile in le lingua principal)', # Fuzzy
 	'sttl-languages-more-link' => 'plus linguas',
 );
 
@@ -159,7 +159,7 @@ $messages['ia'] = array(
  */
 $messages['is'] = array(
 	'sticktothatlanguage-desc' => 'Útvegar möguleika til þess að velja varanlega tungumál',
-	'sttl-setting-languages' => 'Viðbóitar tungumál<br />(til vara þegar gögn eru ekki til á aðalmáli)',
+	'sttl-setting-languages' => 'Viðbóitar tungumál<br />(til vara þegar gögn eru ekki til á aðalmáli)', # Fuzzy
 	'sttl-languages-more-link' => 'fleiri tungumál',
 );
 
@@ -333,4 +333,3 @@ $messages['zh-hant'] = array(
 	'sttl-setting-languages' => '偏好的語言',
 	'sttl-languages-more-link' => '更多語言',
 );
-
