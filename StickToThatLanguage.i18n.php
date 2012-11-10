@@ -302,6 +302,13 @@ $messages['ro'] = array(
 	'sttl-setting-languages' => 'Limbi preferate',
 );
 
+/** Tamil (தமிழ்)
+ * @author மதனாஹரன்
+ */
+$messages['ta'] = array(
+	'sttl-languages-more-link' => 'இன்னும் மொழிகள்',
+);
+
 /** Telugu (తెలుగు)
  * @author Veeven
  */
