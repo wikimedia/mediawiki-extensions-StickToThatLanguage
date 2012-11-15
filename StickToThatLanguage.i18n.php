@@ -49,9 +49,11 @@ $messages['be-tarask'] = array(
 );
 
 /** Czech (česky)
+ * @author Mormegil
  * @author Reaperman
  */
 $messages['cs'] = array(
+	'sticktothatlanguage-desc' => 'Poskytuje funkčnost pro trvalý výběr jazyka',
 	'sttl-setting-languages' => 'Preferované jazyky',
 	'sttl-languages-more-link' => 'další jazyky',
 );
