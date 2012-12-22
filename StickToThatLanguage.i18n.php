@@ -103,6 +103,13 @@ $messages['eu'] = array(
 	'sttl-languages-more-link' => 'Hizkuntza gehiago',
 );
 
+/** Persian (فارسی)
+ * @author Mjbmr
+ */
+$messages['fa'] = array(
+	'sttl-languages-more-link' => 'زبان‌های بیشتر',
+);
+
 /** French (français)
  * @author Brunoperel
  * @author Gomoko
@@ -304,6 +311,14 @@ $messages['pt-br'] = array(
  */
 $messages['ro'] = array(
 	'sttl-setting-languages' => 'Limbi preferate',
+);
+
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'sttl-setting-languages' => 'වරණිත භාෂාවන්',
+	'sttl-languages-more-link' => 'තවත් භාෂාවන්',
 );
 
 /** Tamil (தமிழ்)
