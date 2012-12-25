@@ -281,6 +281,15 @@ $messages['pl'] = array(
 	'sttl-languages-more-link' => 'więcej języków',
 );
 
+/** Piedmontese (Piemontèis)
+ * @author Dragonòt
+ */
+$messages['pms'] = array(
+	'sticktothatlanguage-desc' => 'A dà dle funsionalità për serne na lenga persistentement',
+	'sttl-setting-languages' => 'Lenghe preferìa',
+	'sttl-languages-more-link' => "pì 'd lenghe",
+);
+
 /** Pashto (پښتو)
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
@@ -342,6 +351,15 @@ $messages['tl'] = array(
 	'sticktothatlanguage-desc' => 'Nagbibigay ng katungkulan na masugid na makapili ng isang wika',
 	'sttl-setting-languages' => 'Nais na mga wika',
 	'sttl-languages-more-link' => 'marami pang mga wika',
+);
+
+/** Ukrainian (українська)
+ * @author Ата
+ */
+$messages['uk'] = array(
+	'sticktothatlanguage-desc' => 'Забезпечує функціональність для впевненого вибору мови',
+	'sttl-setting-languages' => 'Бажані мови',
+	'sttl-languages-more-link' => 'інші мови',
 );
 
 /** Simplified Chinese (中文（简体）‎)
