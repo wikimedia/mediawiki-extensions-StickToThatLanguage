@@ -320,6 +320,7 @@ $messages['pt-br'] = array(
  */
 $messages['ro'] = array(
 	'sttl-setting-languages' => 'Limbi preferate',
+	'sttl-languages-more-link' => 'mai multe limbi',
 );
 
 /** Sinhala (සිංහල)
