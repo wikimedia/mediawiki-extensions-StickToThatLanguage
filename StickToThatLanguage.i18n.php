@@ -282,10 +282,11 @@ $messages['pl'] = array(
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Dragonòt
  */
 $messages['pms'] = array(
-	'sticktothatlanguage-desc' => 'A dà dle funsionalità për serne na lenga persistentement',
+	'sticktothatlanguage-desc' => 'A forniss dle funsionalità për serne na lenga ëd fasson definitiva',
 	'sttl-setting-languages' => 'Lenghe preferìa',
 	'sttl-languages-more-link' => "pì 'd lenghe",
 );
