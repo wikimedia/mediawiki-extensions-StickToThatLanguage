@@ -366,8 +366,10 @@ $messages['uk'] = array(
 
 /** Simplified Chinese (中文（简体）‎)
  * @author Shirayuki
+ * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
+	'sticktothatlanguage-desc' => '提供功能来选择坚持使用某个语言',
 	'sttl-setting-languages' => '首选的语言',
 	'sttl-languages-more-link' => '更多语言',
 );
