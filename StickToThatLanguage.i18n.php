@@ -50,6 +50,13 @@ $messages['be-tarask'] = array(
 	'sttl-languages-more-link' => 'болей моваў',
 );
 
+/** Breton (brezhoneg)
+ * @author Fohanno
+ */
+$messages['br'] = array(
+	'sttl-languages-more-link' => "muioc'h a yezhoù",
+);
+
 /** Czech (česky)
  * @author Mormegil
  * @author Reaperman
