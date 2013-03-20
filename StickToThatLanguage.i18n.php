@@ -332,6 +332,13 @@ $messages['ro'] = array(
 	'sttl-languages-more-link' => 'mai multe limbi',
 );
 
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'sttl-languages-more-link' => 'cchiù lènghe',
+);
+
 /** Sinhala (සිංහල)
  * @author පසිඳු කාවින්ද
  */
