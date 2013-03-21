@@ -336,6 +336,8 @@ $messages['ro'] = array(
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'sticktothatlanguage-desc' => "Dèje 'a funzione pe scacchià 'a lènghe pe sembre",
+	'sttl-setting-languages' => 'Lènghe preferite',
 	'sttl-languages-more-link' => 'cchiù lènghe',
 );
 
