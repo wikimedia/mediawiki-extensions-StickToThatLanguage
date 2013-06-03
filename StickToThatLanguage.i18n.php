@@ -253,7 +253,7 @@ $messages['ms'] = array(
 	'sttl-languages-more-link' => 'bahasa lain',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author Jeblad
  */
 $messages['nb'] = array(
@@ -272,7 +272,7 @@ $messages['nl'] = array(
 	'sttl-languages-more-link' => 'meer talen',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Jeblad
  */
 $messages['nn'] = array(
