@@ -393,9 +393,11 @@ $messages['zh-hans'] = array(
 );
 
 /** Traditional Chinese (中文（繁體）‎)
+ * @author Justincheng12345
  * @author Simon Shek
  */
 $messages['zh-hant'] = array(
+	'sticktothatlanguage-desc' => '提供持續選擇某種語言的功能',
 	'sttl-setting-languages' => '偏好的語言',
 	'sttl-languages-more-link' => '更多語言',
 );
