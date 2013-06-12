@@ -244,6 +244,14 @@ $messages['mk'] = array(
 	'sttl-languages-more-link' => 'уште јазици',
 );
 
+/** Marathi (मराठी)
+ * @author Mahitgar
+ */
+$messages['mr'] = array(
+	'sttl-setting-languages' => 'पसंतीच्या भाषा',
+	'sttl-languages-more-link' => 'या पेक्षा अधिक भाषा',
+);
+
 /** Malay (Bahasa Melayu)
  * @author Anakmalaysia
  */
