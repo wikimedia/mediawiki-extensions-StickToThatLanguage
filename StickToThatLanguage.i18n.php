@@ -204,7 +204,7 @@ $messages['ja'] = array(
  * @author David1010
  */
 $messages['ka'] = array(
-	'sttl-setting-languages' => 'სასურველი ენა',
+	'sttl-setting-languages' => 'უპირატესი ენები',
 	'sttl-languages-more-link' => 'მეტი ენა',
 );
 
