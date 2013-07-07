@@ -289,6 +289,14 @@ $messages['nn'] = array(
 	'sttl-languages-more-link' => 'fleire språk',
 );
 
+/** Punjabi (ਪੰਜਾਬੀ)
+ * @author Babanwalia
+ */
+$messages['pa'] = array(
+	'sttl-setting-languages' => 'ਪਸੰਦੀਦਾ ਭਾਸ਼ਾਵਾਂ',
+	'sttl-languages-more-link' => 'ਹੋਰ ਭਾਸ਼ਾਵਾਂ',
+);
+
 /** Polish (polski)
  * @author BeginaFelicysym
  */
