@@ -226,6 +226,14 @@ $messages['ksh'] = array(
 	'sttl-languages-more-link' => 'mieh Shprooche',
 );
 
+/** Latin (Latina)
+ * @author Autokrator
+ */
+$messages['la'] = array(
+	'sticktothatlanguage-desc' => 'Facultatem dat eligendae linguae',
+	'sttl-languages-more-link' => 'plurae linguae',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
