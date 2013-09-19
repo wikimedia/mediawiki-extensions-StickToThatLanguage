@@ -374,6 +374,14 @@ $messages['si'] = array(
 	'sttl-languages-more-link' => 'තවත් භාෂාවන්',
 );
 
+/** Swedish (svenska)
+ * @author WikiPhoenix
+ */
+$messages['sv'] = array(
+	'sttl-setting-languages' => 'Föredragna språk',
+	'sttl-languages-more-link' => 'fler språk',
+);
+
 /** Tamil (தமிழ்)
  * @author மதனாஹரன்
  */
