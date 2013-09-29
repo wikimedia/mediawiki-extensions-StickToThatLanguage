@@ -366,6 +366,15 @@ $messages['roa-tara'] = array(
 	'sttl-languages-more-link' => 'cchiù lènghe',
 );
 
+/** Russian (русский)
+ * @author Okras
+ */
+$messages['ru'] = array(
+	'sticktothatlanguage-desc' => 'Предоставляет возможность выбрать язык на постоянно',
+	'sttl-setting-languages' => 'Предпочитаемые языки',
+	'sttl-languages-more-link' => 'ещё языки',
+);
+
 /** Sinhala (සිංහල)
  * @author පසිඳු කාවින්ද
  */
