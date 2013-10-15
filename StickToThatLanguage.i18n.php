@@ -387,6 +387,7 @@ $messages['si'] = array(
  * @author WikiPhoenix
  */
 $messages['sv'] = array(
+	'sticktothatlanguage-desc' => 'Erbjuder möjligheten att välja ett språk permanent',
 	'sttl-setting-languages' => 'Föredragna språk',
 	'sttl-languages-more-link' => 'fler språk',
 );
