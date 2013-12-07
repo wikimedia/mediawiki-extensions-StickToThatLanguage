@@ -58,7 +58,7 @@ $messages['br'] = array(
 	'sttl-languages-more-link' => "muioc'h a yezhoù",
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Mormegil
  * @author Reaperman
  */
@@ -231,6 +231,7 @@ $messages['ksh'] = array(
  */
 $messages['la'] = array(
 	'sticktothatlanguage-desc' => 'Facultatem dat eligendae linguae',
+	'sttl-setting-languages' => 'Linguae praelatae',
 	'sttl-languages-more-link' => 'plurae linguae',
 );
 
