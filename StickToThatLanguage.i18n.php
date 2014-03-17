@@ -298,6 +298,13 @@ $messages['nn'] = array(
 	'sttl-languages-more-link' => 'fleire språk',
 );
 
+/** Occitan (occitan)
+ * @author Cedric31
+ */
+$messages['oc'] = array(
+	'sttl-setting-languages' => 'Lengas preferidas',
+);
+
 /** Punjabi (ਪੰਜਾਬੀ)
  * @author Babanwalia
  */
