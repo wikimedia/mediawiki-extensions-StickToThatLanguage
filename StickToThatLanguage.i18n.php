@@ -118,6 +118,13 @@ $messages['fa'] = array(
 	'sttl-languages-more-link' => 'زبان‌های بیشتر',
 );
 
+/** Finnish (suomi)
+ * @author Stryn
+ */
+$messages['fi'] = array(
+	'sttl-languages-more-link' => 'lisää kieliä',
+);
+
 /** French (français)
  * @author Brunoperel
  * @author Gomoko
