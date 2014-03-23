@@ -162,6 +162,13 @@ $messages['he'] = array(
 	'sttl-languages-more-link' => 'עוד שפות',
 );
 
+/** Croatian (hrvatski)
+ * @author MaGa
+ */
+$messages['hr'] = array(
+	'sttl-languages-more-link' => '{{PLURAL:drugi jezik|druga jezika|drugih jezika}}',
+);
+
 /** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
