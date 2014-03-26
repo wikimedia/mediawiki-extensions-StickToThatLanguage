@@ -166,7 +166,7 @@ $messages['he'] = array(
  * @author MaGa
  */
 $messages['hr'] = array(
-	'sttl-languages-more-link' => '{{PLURAL:drugi jezik|druga jezika|drugih jezika}}',
+	'sttl-languages-more-link' => 'još jezika',
 );
 
 /** Upper Sorbian (hornjoserbsce)
@@ -403,6 +403,13 @@ $messages['ru'] = array(
 $messages['si'] = array(
 	'sttl-setting-languages' => 'වරණිත භාෂාවන්',
 	'sttl-languages-more-link' => 'තවත් භාෂාවන්',
+);
+
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
+ * @author Milicevic01
+ */
+$messages['sr-ec'] = array(
+	'sttl-languages-more-link' => 'још језика',
 );
 
 /** Swedish (svenska)
