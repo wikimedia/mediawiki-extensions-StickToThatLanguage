@@ -112,9 +112,12 @@ $messages['eu'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Armin1392
  * @author Mjbmr
  */
 $messages['fa'] = array(
+	'sticktothatlanguage-desc' => 'ارائه کارکرد برای انتخاب یک زبان به طور مداوم',
+	'sttl-setting-languages' => 'زبان‌های برگزیده شده',
 	'sttl-languages-more-link' => 'زبان‌های بیشتر',
 );
 
