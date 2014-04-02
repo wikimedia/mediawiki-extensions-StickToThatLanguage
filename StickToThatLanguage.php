@@ -17,7 +17,6 @@ namespace STTLanguage;
  * @file StickToThatLanguage.php
  * @ingroup STTLanguage
  *
- * @version: 0.1rc
  * @licence GNU GPL v2+
  * @author: Daniel Werner < daniel.werner@wikimedia.de >
  */
@@ -34,6 +33,7 @@ $wgExtensionCredits['other'][] = array(
 );
 
 // i18n
+$wgMessagesDirs['StickToThatLanguage'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['StickToThatLanguage'] = Ext::getDir() . '/StickToThatLanguage.i18n.php';
 
 // Autoloading
@@ -91,7 +91,7 @@ class Ext {
 	 *
 	 * @var string
 	 */
-	const VERSION = '0.1rc';
+	const VERSION = '0.2.0';
 
 	/**
 	 * Returns the extensions base installation directory.
