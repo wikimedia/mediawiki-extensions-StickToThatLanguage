@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Jaideraf"
-        ]
-    },
-    "sticktothatlanguage-desc": "Fornece funcionalidade para escolher um idioma persistentemente",
-    "sttl-setting-languages": "Idiomas preferidos",
-    "sttl-languages-more-link": "mais idiomas"
+	"@metadata": {
+		"authors": [
+			"Jaideraf"
+		]
+	},
+	"sticktothatlanguage-desc": "Fornece funcionalidade para escolher um idioma persistentemente",
+	"sttl-setting-languages": "Idiomas preferidos",
+	"sttl-languages-more-link": "mais idiomas"
 }

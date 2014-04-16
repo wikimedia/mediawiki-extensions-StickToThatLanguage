@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Okras"
-        ]
-    },
-    "sticktothatlanguage-desc": "Предоставляет возможность выбрать язык на постоянно",
-    "sttl-setting-languages": "Предпочитаемые языки",
-    "sttl-languages-more-link": "ещё языки"
+	"@metadata": {
+		"authors": [
+			"Okras"
+		]
+	},
+	"sticktothatlanguage-desc": "Предоставляет возможность выбрать язык на постоянно",
+	"sttl-setting-languages": "Предпочитаемые языки",
+	"sttl-languages-more-link": "ещё языки"
 }

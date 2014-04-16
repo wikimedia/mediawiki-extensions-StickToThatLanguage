@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "SandroHc"
-        ]
-    },
-    "sttl-setting-languages": "Linguagens preferidas",
-    "sttl-languages-more-link": "mais linguagens"
+	"@metadata": {
+		"authors": [
+			"SandroHc"
+		]
+	},
+	"sttl-setting-languages": "Linguagens preferidas",
+	"sttl-languages-more-link": "mais linguagens"
 }
