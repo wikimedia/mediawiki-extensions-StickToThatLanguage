@@ -39,7 +39,7 @@
 					$( '<a/>' )
 					.addClass( 'sttl-languages-more-link' )
 					.text( mw.msg( 'sttl-languages-more-link' ) )
-					.attr( 'href', 'javascript:void(0);' )
+					.attr( 'href', '#' )
 					.click( function( event ) {
 						event.preventDefault();
 						$( '#p-lang .body h6 span' )
