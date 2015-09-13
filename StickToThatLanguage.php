@@ -71,7 +71,8 @@ $wgResourceModules['sticktothatlanguage'] = array(
 	'dependencies' => array(
 		'jquery.ui.core'
 	),
-	'group' => 'ext.sticktothatlanguage'
+	'group' => 'ext.sticktothatlanguage',
+	'position' => 'top',
 );
 
 // Include settings:
