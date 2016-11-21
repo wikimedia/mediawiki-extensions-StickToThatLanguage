@@ -35,10 +35,10 @@ $wgExtensionCredits['other'][] = array(
 
 // i18n
 $wgMessagesDirs['StickToThatLanguage'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['StickToThatLanguage'] = Ext::getDir() . '/StickToThatLanguage.i18n.php';
+$wgExtensionMessagesFiles['StickToThatLanguage'] = __DIR__ . '/StickToThatLanguage.i18n.php';
 
 // Autoloading
-$wgAutoloadClasses['STTLanguage\Hooks']   = Ext::getDir() . '/StickToThatLanguage.hooks.php';
+$wgAutoloadClasses['STTLanguage\Hooks']   = __DIR__ . '/StickToThatLanguage.hooks.php';
 
 // hooks registration:
 $wgHooks['UnitTestsList'][]                    = 'STTLanguage\Hooks::registerUnitTests';
@@ -57,7 +57,7 @@ if( !$wgCommandLineMode ) {
 
 // Resource Loader Module:
 $wgResourceModules['sticktothatlanguage'] = array(
-	'localBasePath' => Ext::getDir(),
+	'localBasePath' => __DIR__,
 	'remoteExtPath' => 'StickToThatLanguage',
 	'scripts' => array(
 		'resources/StickToThatLanguage.js'
@@ -76,7 +76,7 @@ $wgResourceModules['sticktothatlanguage'] = array(
 );
 
 // Include settings:
-require_once Ext::getDir() . '/StickToThatLanguage.settings.php';
+require_once __DIR__ . '/StickToThatLanguage.settings.php';
 
 
 /**
@@ -94,22 +94,6 @@ class Ext {
 	 * @var string
 	 */
 	const VERSION = '0.2.0';
-
-	/**
-	 * Returns the extensions base installation directory.
-	 *
-	 * @since 0.1
-	 *
-	 * @return string
-	 */
-	public static function getDir() {
-		static $dir = null;
-
-		if( $dir === null ) {
-			$dir = dirname( __FILE__ );
-		}
-		return $dir;
-	}
 
 	/**
 	 * Returns the list of languages the user has set as preferred languages in the preferences.

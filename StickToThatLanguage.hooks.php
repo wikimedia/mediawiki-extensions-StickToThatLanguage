@@ -24,7 +24,7 @@ final class Hooks {
 	 * @return bool
 	 */
 	public static function registerUnitTests( array &$files ) {
-		$files[] = Ext::getDir() . '/tests/phpunit/ExtTest.php'; // STTLanguage\Ext (extension class)
+		$files[] = __DIR__ . '/tests/phpunit/ExtTest.php'; // STTLanguage\Ext (extension class)
 		return true;
 	}
 
