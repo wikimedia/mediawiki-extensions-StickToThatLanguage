@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"SandroHc"
+			"SandroHc",
+			"Hamilton Abreu"
 		]
 	},
-	"sttl-setting-languages": "Linguagens preferidas",
-	"sttl-languages-more-link": "mais linguagens"
+	"sticktothatlanguage-desc": "Fornece funcionalidade para escolher uma língua de forma persistente",
+	"sttl-setting-languages": "Línguas preferidas",
+	"sttl-languages-more-link": "mais línguas"
 }
