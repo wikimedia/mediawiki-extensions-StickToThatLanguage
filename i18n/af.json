@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fwolff"
+			"Fwolff",
+			"Biggs ZA"
 		]
 	},
-	"sticktothatlanguage-desc": "Verskaf funksionaliteit om 'n kies permanent te kies",
+	"sticktothatlanguage-desc": "Bied die funksionaliteit om 'n taal beslissend te kies",
 	"sttl-setting-languages": "Voorkeurtale",
 	"sttl-languages-more-link": "meer tale"
 }
