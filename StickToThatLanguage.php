@@ -35,7 +35,6 @@ $wgExtensionCredits['other'][] = array(
 
 // i18n
 $wgMessagesDirs['StickToThatLanguage'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['StickToThatLanguage'] = __DIR__ . '/StickToThatLanguage.i18n.php';
 
 // Autoloading
 $wgAutoloadClasses['STTLanguage\Hooks']   = __DIR__ . '/StickToThatLanguage.hooks.php';
