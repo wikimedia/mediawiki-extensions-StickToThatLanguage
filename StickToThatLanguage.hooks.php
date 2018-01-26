@@ -140,7 +140,7 @@ final class Hooks {
 		$language_urls = array_merge( $topLangUrls, $langUrls );
 
 		// define these languages as languages for the sitebar within the skin:
-		$tpl->setRef( 'language_urls', $language_urls );
+		$tpl->set( 'language_urls', $language_urls );
 
 		return true;
 	}
