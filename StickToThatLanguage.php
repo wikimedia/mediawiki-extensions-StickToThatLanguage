@@ -30,7 +30,7 @@ $wgExtensionCredits['other'][] = array(
 	'version'        => Ext::VERSION,
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:Stick_to_That_Language',
 	'author'         => array( '[https://www.mediawiki.org/wiki/User:Danwe Daniel Werner]' ),
-	'license-name'   => 'GPL-2.0+',
+	'license-name'   => 'GPL-2.0-or-later',
 );
 
 // i18n
