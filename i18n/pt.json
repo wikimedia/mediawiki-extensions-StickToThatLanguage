@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"SandroHc",
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"SandroHc"
 		]
 	},
 	"sticktothatlanguage-desc": "Fornece funcionalidade para escolher uma língua de forma persistente",
