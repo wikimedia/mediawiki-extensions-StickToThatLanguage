@@ -2,6 +2,8 @@
 
 namespace STTLanguage;
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * File defining the hook handlers for the 'Stick to That Language' extension.
  *
@@ -186,7 +188,7 @@ final class Hooks {
 	 * @return bool true
 	 */
 	public static function onLinkBegin( $skin, $target, &$text, &$customAttribs, &$query, &$options, &$ret ) {
-		global $wgLang, $wgParser;
+		global $wgLang;
 
 		if( is_string( $query ) ) {
 			// this check is not yet in MW core (pending on review in 1.20). This can actually be a string
@@ -221,6 +223,10 @@ final class Hooks {
 	 * @return bool true
 	 */
 	public static function onGetLocalUrlInternally( \Title $title, &$url ) {
+		if ( MW_ENTRY_POINT === 'load' ) {
+			// RessourceLoader does not allow to use session and $wgLang
+			return;
+		}
 		global $wgLang;
 
 		/*
@@ -243,14 +249,14 @@ final class Hooks {
 	 * @since 0.1
 	 */
 	private static function causeCacheFragmentation() {
-		global $wgParser;
-		if( $wgParser->getOptions() !== null ) { // if not parsing anything right now, this is set to null
+		$parser = MediaWikiServices::getInstance()->getParser();
+		if( $parser->getOptions() !== null ) { // if not parsing anything right now, this is set to null
 			/*
 			This will trigger cache fragmentation. The parser options will set some flag internally
 			for generating a language specific parser cache key. This is basically the same what the
 			'int' parser function does.
 			*/
-			$wgParser->getOptions()->getUserLangObj();
+			$parser->getOptions()->getUserLangObj();
 		}
 	}
 
@@ -271,7 +277,7 @@ final class Hooks {
 	 */
 	public static function onAfterFinalPageOutput( \OutputPage $out ) {
 		global $wgLang;
-		$startTime = microtime();
+		$startTime = microtime( true );
 
 		// removes everything from the output buffer and returns it, so we can actually modify it:
 		$output = ob_get_clean();
@@ -295,7 +301,7 @@ final class Hooks {
 
 		// replace <form>'s content with content + hidden 'uselang' field
 		echo preg_replace( $regex, $replacement, $output );
-		echo sprintf( '<!-- STTLanguage <form> \'uselang\' injection done in  %01.3f secs -->', microtime() - $startTime ) . "\n";
+		echo sprintf( '<!-- STTLanguage <form> \'uselang\' injection done in  %01.3f secs -->', microtime( true ) - $startTime ) . "\n";
 
 		return true;
 	}
