@@ -41,7 +41,7 @@
 									.addClass( 'sttl-languages-more-link' )
 									.text( mw.msg( 'sttl-languages-more-link' ) )
 									.attr( 'href', '#' )
-									.click( function ( e ) {
+									.on( 'click', function ( e ) {
 										e.preventDefault();
 										$( '#p-lang .body h6 span' )
 											.toggleClass( 'ui-icon-triangle-1-e' )
@@ -55,7 +55,6 @@
 		// class style initially hides "more" languages
 		$( '#p-lang .body ul' ).eq( 1 ).addClass( 'sttl-languages-more' );
 
-	});
+	} );
 
 }( jQuery, mediaWiki ) );
-
