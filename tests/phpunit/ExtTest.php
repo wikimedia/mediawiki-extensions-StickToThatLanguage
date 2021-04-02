@@ -1,6 +1,8 @@
 <?php
 
 namespace STTLanguage\Test;
+
+use MediaWiki\MediaWikiServices;
 use STTLanguage\Ext as Ext;
 
 /**
@@ -30,8 +32,17 @@ class ExtTest extends \MediaWikiTestCase {
 		//       options to null instead of getting the default options when calling getOption() afterwards!
 		$defaultLang = $user->getOption( 'language' );
 
-		foreach( $langs as $code ) {
-			$user->setOption( "wb-languages-$code", 1 );
+		$services = MediaWikiServices::getInstance();
+		if ( method_exists( $services, 'getUserOptionsManager' ) ) {
+			// MW 1.35 +
+			$userOptionsManager = $services->getUserOptionsManager();
+			foreach( $langs as $code ) {
+				$userOptionsManager->setOption( $user, "wb-languages-$code", 1 );
+			}
+		} else {
+			foreach( $langs as $code ) {
+				$user->setOption( "wb-languages-$code", 1 );
+			}
 		}
 
 		// users default lang expected to be returned always by getUserLanguageCodes()
