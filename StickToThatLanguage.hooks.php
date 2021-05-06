@@ -94,7 +94,7 @@ final class Hooks {
 		$langUrls = array();
 		$topLangUrls = array();
 
-		$topLanguages = $user->isLoggedIn()
+		$topLanguages = $user->isRegistered()
 			? Ext::getUserLanguageCodes( $user ) // display users preferred languages on top
 			: $egSTTLanguageTopLanguages;
 
