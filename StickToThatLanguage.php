@@ -23,15 +23,15 @@ namespace STTLanguage;
 
 if( ! defined( 'MEDIAWIKI' ) ) { die(); }
 
-$wgExtensionCredits['other'][] = array(
+$wgExtensionCredits['other'][] = [
 	'path'           => __FILE__,
 	'name'           => 'Stick to That Language',
 	'descriptionmsg' => 'sticktothatlanguage-desc',
 	'version'        => Ext::VERSION,
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:Stick_to_That_Language',
-	'author'         => array( '[https://www.mediawiki.org/wiki/User:Danwe Daniel Werner]' ),
+	'author'         => [ '[https://www.mediawiki.org/wiki/User:Danwe Daniel Werner]' ],
 	'license-name'   => 'GPL-2.0-or-later',
-);
+];
 
 // i18n
 $wgMessagesDirs['StickToThatLanguage'] = __DIR__ . '/i18n';
@@ -55,23 +55,23 @@ if( !$wgCommandLineMode ) {
 }
 
 // Resource Loader Module:
-$wgResourceModules['sticktothatlanguage'] = array(
+$wgResourceModules['sticktothatlanguage'] = [
 	'localBasePath' => __DIR__,
 	'remoteExtPath' => 'StickToThatLanguage',
-	'scripts' => array(
+	'scripts' => [
 		'resources/StickToThatLanguage.js'
-	),
-	'styles' => array(
+	],
+	'styles' => [
 		'resources/StickToThatLanguage.css'
-	),
-	'messages' => array(
+	],
+	'messages' => [
 		'sttl-languages-more-link'
-	),
-	'dependencies' => array(
+	],
+	'dependencies' => [
 		'jquery.ui'
-	),
+	],
 	'group' => 'ext.sticktothatlanguage',
-);
+];
 
 // Include settings:
 require_once __DIR__ . '/StickToThatLanguage.settings.php';
@@ -103,7 +103,7 @@ class Ext {
 	 * @return array with language codes as values
 	 */
 	public static function getUserLanguageCodes( $user ) {
-		$languageCodes = array();
+		$languageCodes = [];
 
 		// check for all languages whether they are selected as users preferred language:
 		foreach( \Language::fetchLanguageNames() as $code => $name ) {

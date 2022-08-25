@@ -58,9 +58,9 @@ class ExtTest extends \MediaWikiIntegrationTestCase {
 	}
 
 	public function providerGetUserLanguageCodes() {
-		return array(
-			array( array( 'fr', 'de', 'it' ), 'All languages the user set in his options should be returned' ),
-			array( array(), 'The users default language should be returned if the never touched his options' ),
-		);
+		return [
+			[ [ 'fr', 'de', 'it' ], 'All languages the user set in his options should be returned' ],
+			[ [], 'The users default language should be returned if the never touched his options' ],
+		];
 	}
 }

@@ -41,14 +41,14 @@ final class Hooks {
 	 * @return bool
 	 */
 	public static function onGetPreferences( \User $user, array &$preferences ) {
-		$preferences['sttl-languages'] = array(
+		$preferences['sttl-languages'] = [
 			'type' => 'multiselect',
 			'usecheckboxes' => false,
 			'label-message' => 'sttl-setting-languages',
 			'options' => $preferences['language']['options'], // all languages available in 'language' selector
 			'section' => 'personal/i18n',
 			'prefix' => 'sttl-languages-',
-		);
+		];
 
 		return true;
 	}
@@ -91,8 +91,8 @@ final class Hooks {
 		$title = $sk->getOutput()->getTitle();
 		$user = $sk->getUser();
 
-		$langUrls = array();
-		$topLangUrls = array();
+		$langUrls = [];
+		$topLangUrls = [];
 
 		$topLanguages = $user->isRegistered()
 			? Ext::getUserLanguageCodes( $user ) // display users preferred languages on top
@@ -104,21 +104,21 @@ final class Hooks {
 			}
 
 			// set 'uselang' and in case this was a GET request also all other parameters when switching language
-			$urlParams = array( 'uselang' => $code );
+			$urlParams = [ 'uselang' => $code ];
 			if( ! $sk->getRequest()->wasPosted() ) {
 				$urlParams += $sk->getRequest()->getValues();
 				unset( $urlParams['title'] ); // don't want the 'title' twice
 			}
 
 			// build information for the skin to generate links for all languages:
-			$url = array(
+			$url = [
 				'href' => $title->getFullURL( $urlParams ),
 				'text' => $name,
 				'title' => $title->getText(),
 				'class' => "sttl-lang-$code", // site-links use 'interwiki-' which seems inappropriate in this case
 				'lang' => $code,
 				'hreflang' => $code,
-			);
+			];
 
 			$topIndex =  array_search( $code, $topLanguages );
 			if( $topIndex !== false ) {
