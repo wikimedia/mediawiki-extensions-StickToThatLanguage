@@ -2,6 +2,8 @@
 
 namespace STTLanguage;
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * Initialization file for the 'Stick to That Language' extension.
  *
@@ -105,14 +107,28 @@ class Ext {
 	public static function getUserLanguageCodes( $user ) {
 		$languageCodes = [];
 
-		// check for all languages whether they are selected as users preferred language:
-		foreach( \Language::fetchLanguageNames() as $code => $name ) {
-			if( $user->getOption( "sttl-languages-$code" ) ) {
-				$languageCodes[] = $code;
+		$services = MediaWikiServices::getInstance();
+		if ( method_exists( $services, 'getUserOptionsManager' ) ) {
+			// MW 1.35 +
+			$userOptionsManager = $services->getUserOptionsManager();
+			// check for all languages whether they are selected as users preferred language:
+			foreach( \Language::fetchLanguageNames() as $code => $name ) {
+				if( $userOptionsManager->getOption( $user, "sttl-languages-$code" ) ) {
+					$languageCodes[] = $code;
+				}
 			}
+			// make sure users overall language is represented within:
+			$userLang = $userOptionsManager->getOption( $user, 'language' );
+		} else {
+			// check for all languages whether they are selected as users preferred language:
+			foreach( \Language::fetchLanguageNames() as $code => $name ) {
+				if( $user->getOption( "sttl-languages-$code" ) ) {
+					$languageCodes[] = $code;
+				}
+			}
+			// make sure users overall language is represented within:
+			$userLang = $user->getOption( 'language' );
 		}
-		// make sure users overall language is represented within:
-		$userLang = $user->getOption( 'language' );
 		if( !in_array( $userLang, $languageCodes ) ) {
 			$languageCodes[] = $userLang;
 		}
