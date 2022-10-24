@@ -18,6 +18,7 @@ use STTLanguage\Ext as Ext;
  *
  * @licence GNU GPL v2+
  * @author Daniel Werner
+ * @covers \STTLanguage\Ext
  */
 class ExtTest extends \MediaWikiIntegrationTestCase {
 	/**
