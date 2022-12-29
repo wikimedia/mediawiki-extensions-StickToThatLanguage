@@ -112,7 +112,7 @@ class Ext {
 			// MW 1.35 +
 			$userOptionsManager = $services->getUserOptionsManager();
 			// check for all languages whether they are selected as users preferred language:
-			foreach( \Language::fetchLanguageNames() as $code => $name ) {
+			foreach( $services->getLanguageNameUtils()->getLanguageNames() as $code => $name ) {
 				if( $userOptionsManager->getOption( $user, "sttl-languages-$code" ) ) {
 					$languageCodes[] = $code;
 				}

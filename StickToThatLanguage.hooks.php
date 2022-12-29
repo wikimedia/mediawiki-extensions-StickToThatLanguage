@@ -98,7 +98,13 @@ final class Hooks {
 			? Ext::getUserLanguageCodes( $user ) // display users preferred languages on top
 			: $egSTTLanguageTopLanguages;
 
-		foreach( \Language::fetchLanguageNames() as $code => $name ) {
+		if ( method_exists( MediaWikiServices::class, 'getLanguageNameUtils' ) ) {
+			// MW 1.34+
+			$languages = MediaWikiServices::getInstance()->getLanguageNameUtils()->getLanguageNames();
+		} else {
+			$languages = \Language::fetchLanguageNames();
+		}
+		foreach( $languages as $code => $name ) {
 			if( $code === $sk->getLanguage()->getCode() ) {
 				continue; // don't add language the page is displayed in
 			}
