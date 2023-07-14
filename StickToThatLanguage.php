@@ -108,27 +108,15 @@ class Ext {
 		$languageCodes = [];
 
 		$services = MediaWikiServices::getInstance();
-		if ( method_exists( $services, 'getUserOptionsManager' ) ) {
-			// MW 1.35 +
-			$userOptionsManager = $services->getUserOptionsManager();
-			// check for all languages whether they are selected as users preferred language:
-			foreach( $services->getLanguageNameUtils()->getLanguageNames() as $code => $name ) {
-				if( $userOptionsManager->getOption( $user, "sttl-languages-$code" ) ) {
-					$languageCodes[] = $code;
-				}
+		$userOptionsManager = $services->getUserOptionsManager();
+		// check for all languages whether they are selected as users preferred language:
+		foreach( $services->getLanguageNameUtils()->getLanguageNames() as $code => $name ) {
+			if( $userOptionsManager->getOption( $user, "sttl-languages-$code" ) ) {
+				$languageCodes[] = $code;
 			}
-			// make sure users overall language is represented within:
-			$userLang = $userOptionsManager->getOption( $user, 'language' );
-		} else {
-			// check for all languages whether they are selected as users preferred language:
-			foreach( \Language::fetchLanguageNames() as $code => $name ) {
-				if( $user->getOption( "sttl-languages-$code" ) ) {
-					$languageCodes[] = $code;
-				}
-			}
-			// make sure users overall language is represented within:
-			$userLang = $user->getOption( 'language' );
 		}
+		// make sure users overall language is represented within:
+		$userLang = $userOptionsManager->getOption( $user, 'language' );
 		if( !in_array( $userLang, $languageCodes ) ) {
 			$languageCodes[] = $userLang;
 		}

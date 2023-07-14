@@ -31,19 +31,10 @@ class ExtTest extends \MediaWikiIntegrationTestCase {
 
 		// NOTE: have to get this BEFORE using setOption() on the user, otherwise setOption will leave all other
 		//       options to null instead of getting the default options when calling getOption() afterwards!
-		$services = MediaWikiServices::getInstance();
-		if ( method_exists( $services, 'getUserOptionsManager' ) ) {
-			// MW 1.35 +
-			$userOptionsManager = $services->getUserOptionsManager();
-			$defaultLang = $userOptionsManager->getOption( $user, 'language' );
-			foreach( $langs as $code ) {
-				$userOptionsManager->setOption( $user, "wb-languages-$code", 1 );
-			}
-		} else {
-			$defaultLang = $user->getOption( 'language' );
-			foreach( $langs as $code ) {
-				$user->setOption( "wb-languages-$code", 1 );
-			}
+		$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
+		$defaultLang = $userOptionsManager->getOption( $user, 'language' );
+		foreach( $langs as $code ) {
+			$userOptionsManager->setOption( $user, "wb-languages-$code", 1 );
 		}
 
 		// users default lang expected to be returned always by getUserLanguageCodes()
