@@ -9,7 +9,7 @@
  * @author H. Snater
  */
 
-( function ( $, mw ) {
+( function () {
 	'use strict';
 
 	$( function () {
@@ -57,4 +57,4 @@
 
 	} );
 
-}( jQuery, mediaWiki ) );
+}() );
